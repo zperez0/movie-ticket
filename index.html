@@ -11,9 +11,10 @@
   <h2>Movies</h2>
   <div class="form-group">
 
+    <form id = "ticket">
     <!-- movies -->
     <label for="sel1">Movies:</label>
-    <select class="form-control" id="sel1">
+    <select class="form-control" id="movie">
       <option>Witcher</option>
       <option>Game of Thrones</option>
       <option>Cowboy Bebop</option>
@@ -21,21 +22,26 @@
 
     <!-- time -->
     <label for="sel1">Showings:</label>
-    <select class="form-control" id="sel1">
-      <option>1:00pm</option>
-      <option>4:00pm</option>
-      <option>8:00pm</option>
+    <select class="form-control" id="time">
+      <option>morning</option>
+      <option>evening</option>
     </select>
 
 
     <!-- age -->
     <label for="sel1">Age:</label>
-    <select class="form-control" id="sel1">
-      <option>0-17 years old</option>
-      <option>18+ years old</option>
+    <select class="form-control" id="age">
+      <option>child</option>
+      <option>adult</option>
+      <option value = "senior">senior</option>
     </select>
   </div> 
 
+  <button type ="submit" id="btn">Submit</button>
+</form>
   
+<div id="quote">
+  <p>Your total is <span id="price" ></span>!</p>
+</div>
 </body>
 </html>
